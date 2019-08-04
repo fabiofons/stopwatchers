@@ -2,7 +2,9 @@
   "name": "cronometros",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fabiofons.github.io/stopwatchers",
   "dependencies": {
+    "gh-pages": "^2.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-html-id": "^0.1.5",
@@ -12,6 +14,8 @@
     "semantic-ui-react": "^0.87.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
